@@ -1,9 +1,21 @@
 <div class="header">
 
-<div class="title">
-	<h4>HomePage</h4>
-</div>
+	<div class="title ui-g">
+		<img alt="Titel" src="assets/images/bild1.jpg">
+	</div>
+	
+	<div class="tabMenu">
+	
+		<p-tabMenu [model]="headerItems" *ngIf="!isStacked">
+		</p-tabMenu>
+		
+		<button *ngIf="isStacked" type="text" pButton label="Basic" (click)="op.toggle($event)"></button>
+	</div>
 
+
+	<p-overlayPanel #op>
+    	Content
+	</p-overlayPanel>
 </div>
 
 

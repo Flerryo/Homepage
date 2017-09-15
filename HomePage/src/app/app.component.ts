@@ -1,21 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   template: `
+<div class="app-wrapper">
 
-<app-header>
+  <app-header [isStacked]="isStacked">
+  </app-header>
 
-</app-header>
+</div>
 
-<app-menu>
-
-</app-menu>`
-  
+`
   ,
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  
 })
+  
 export class AppComponent implements OnInit {
+
+  public isStacked: boolean;
 
   constructor() {
     
@@ -23,6 +26,22 @@ export class AppComponent implements OnInit {
   
   ngOnInit() {
     
+    // die Breite überprüfen
+    this.checkWidth();
+    
+  }
+  
+  /**
+   * Hier überprüfen wir die Breite und schauen ob wir Mobiles Layout verwenden 
+   * müssen oder für den Desktop
+   */
+  private checkWidth() {
+    if (window.innerWidth < 481) {
+      this.isStacked = true;
+      return;
+    }
+    
+    this.isStacked = false;
   }
  
 }
