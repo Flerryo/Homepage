@@ -1,0 +1,21 @@
+<div class="home">
+	<p-panel header="News" class="homepanel">
+    	<ul>
+    		<li>
+    			Neue Bilder Online gleich <a [routerLink]="['/Gallerie']">hier</a> ansehen
+    		</li>
+    		<li>
+    			Dies und Das
+    		</li>
+    	</ul>
+	</p-panel>
+	
+	<p-panel header="Termine" class="homepanel">
+    	Neues kommt hier ---->
+	</p-panel>
+	
+	<p-panel header="Neue Kunstwerke" class="homepanel">
+    	<p-galleria [images]="kunstwerke" panelWidth="80%" panelHeight="300" [showCaption]="true">
+    	</p-galleria>
+	</p-panel>
+</div>

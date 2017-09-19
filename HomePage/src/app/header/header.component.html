@@ -9,7 +9,7 @@
 		<p-tabMenu [model]="headerItems" *ngIf="!isStacked">
 		</p-tabMenu>
 		
-		<button *ngIf="isStacked" type="text" pButton label="Basic" (click)="op.toggle($event)"></button>
+		<button *ngIf="isStacked" type="text" pButton icon="menu" (click)="op.toggle($event)"></button>
 	</div>
 
 

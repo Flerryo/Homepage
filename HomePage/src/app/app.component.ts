@@ -8,6 +8,12 @@ import { Component, OnInit, HostListener } from '@angular/core';
   <app-header [isStacked]="isStacked">
   </app-header>
 
+  <app-content>
+  </app-content>
+
+  <app-footer>
+  </app-footer>
+
 </div>
 
 `

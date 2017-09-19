@@ -22,11 +22,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.headerItems = [
-            {label: 'Gallerie'},
-            {label: 'Malerei'},
-            {label: 'Acryl'},
-            {label: 'Biographie'},
-            {label: 'Ausstellungen'}
+            {label: 'Home', routerLink: "/Home"},
+            {label: 'Gallerie', routerLink: "/Gallerie"},
+            {label: 'Malerei', routerLink: "/Malerei"},
+            {label: 'Acryl', routerLink: "/Acryl"},
+            {label: 'Biographie', routerLink: "/Biographie"},
+            {label: 'Ausstellungen', routerLink: "/Ausstellung"}
         ];
   }
     

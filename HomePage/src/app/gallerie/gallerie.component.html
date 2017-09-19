@@ -1,0 +1,12 @@
+<div class="gallerie">
+	<div class="ui-g">
+		<div *ngFor="let image of images" class="gallerie-images ui-g-4">
+			<img alt={{image.title}} src={{image.source}} (click)="op.toggle($event); currentImage = image">
+		</div>
+	</div>
+</div>
+
+<p-overlayPanel #op class="gallerie-overlay">
+   <img alt={{currentImage.title}} src="{{currentImage.source}}" *ngIf="currentImage">
+   <h2 *ngIf="currentImage">{{currentImage.alt}}</h2>
+</p-overlayPanel>

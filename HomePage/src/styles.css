@@ -3,32 +3,121 @@
 /* globaler und nicht media-Tag abhängiger Style kommt hier */
 
 body {
-	
+	margin: 0px;
 }
 
 .app-wrapper {
-	
+	width: 100%;
+	height: 100%;
+	background: url("assets/images/kunst1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .header{
-	width: 100%;
+	width: 80%;
+	margin: auto;
 }
 
 .header .title {
 	width: 100%;
-	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 .header .title img {
 	width: 300px;
 	height: 100px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 10px;
+}
+
+.tabMenu, .ui-tabmenu {
+	background: none;
 }
 
 .tabMenu {
 	width: 100%;
 	border-bottom: 1px solid black;
+	margin: auto;
+}
+
+.ui-tabmenu .ui-tabmenu-nav > li.ui-state-default {
+	
+}
+
+.content-wrapper {
+	width: 90%;
+	margin: auto;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	height: 1000px;
+	background-color: #ffffff;
+	margin: auto;
+}
+
+.home {
+	width: 100%;
+}
+
+.homepanel {
+	display: block;
+	width: 60%;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+
+.homepanel .ui-galleria {
+	margin-top: 10px;
+}
+
+.homepanel a {
+	color: rgb(175, 190, 207);
+	text-decoration: none;
+}
+
+.ui-panel-images {
+	width: 100%;
+	height: 100%;
+}
+
+app-home {
+	width: 100%;
+}
+
+.ui-panel-titlebar {
+	background: rgb(224, 237, 252);	
+}
+
+app-gallerie {
+	width: 100%;
+}
+
+.gallerie-images {
+	background-color: rgb(224, 237, 252);
+}
+
+.gallerie img {
+	width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-top: 30px;
+    height: 60%;
+}
+
+.gallerie-overlay {
+	
+}
+
+.gallerie-overlay img {
+	width: 100%;
+	height: 100%;
 }
 
 .bildersuche {
@@ -52,8 +141,20 @@ body {
 	right: 0;
 }
 
+.footer-wrapper {
+	width: 90%;
+	height: 20px;
+}
+
 .footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+
+@Media (max-width: 480px) {
+	
+	.tabMenu {
+		border: none;
+	}
 }
